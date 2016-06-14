@@ -1,0 +1,28 @@
+{
+    "name": "karas/images",
+    "module": "images",
+    "type": "pagekit-extension",
+    "version": "0.0.4",
+    "title": "Images Extension",
+    "description": "A deputy images for sliders, carousels",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuri Efimov",
+            "email": "yura.karas@gmail.com",
+            "homepage": "http://letcrew.com"
+        }
+    ],
+
+    "extra": {
+        "icon": "icon.svg",
+        "scripts": "scripts.php"
+    },
+    "require": {
+        "abeautifulsite/simpleimage": "2.5.*"
+    },
+    "archive": {
+        "exclude": ["node_modules", "!/app"]
+    }
+
+}

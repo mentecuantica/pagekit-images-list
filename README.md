@@ -17,9 +17,17 @@ I took hints and class from  [https://github.com/Bixie/pagekit-portfolio](https:
 
 So with all due respect and rights few things or ideas are belongs to Bixie.
 
-## How to install works ##
+## How to use it ##
 
-You can download the extension  zip file 
+You can download the whole repo as a zip file, and install it via Pagekit Admin Extensions.
+Or just for experiments place it under packages karas/images folder.
+ 
+## How it works ##
+
+It uses nice native pagekit file manager, which is accessible as a component. You need to create or choose some folder with images.
+Then you can set up thumbnail width and height. On the next tab you can select images which you want to be shown via widget.
+Widget markup is based on Bootstrap 3. 
+
 
 
 ### My 10 rubles about Pagekit experience. ###

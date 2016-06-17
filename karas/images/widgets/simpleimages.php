@@ -19,8 +19,8 @@ return [
         },
         'view.scripts' => function ($event, $scripts) use ($app) {
 
-            $app->view()->script('widget-simpleimages', 'images:js/jquery.flexslider-min.js', ['jquery']);
-            $app->view()->script('widget-simpleimages1', 'images:js/jquery.magnific-popup.min.js', ['jquery']);
+            $app->view()->script('widget-simpleimages', 'images:js/jquery.flexslider-min.js');
+            $app->view()->script('widget-simpleimages1', 'images:js/jquery.magnific-popup.min.js');
   
         }
 

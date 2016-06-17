@@ -42,6 +42,11 @@
             select: function() {
                 this.folder = this.$refs.finder.getSelected()[0];
                 this.$dispatch('folder-selected', this.folder);
+                /**
+                 * Add this to save selected folder in your config
+                 * @type {string|*}
+                 */
+                $data.config.folder = this.folder;
                 this.$refs.finder.removeSelection();
                 this.$refs.modal.close();
             },

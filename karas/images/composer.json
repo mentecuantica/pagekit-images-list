@@ -2,7 +2,7 @@
     "name": "karas/images",
     "module": "images",
     "type": "pagekit-extension",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "title": "Images Extension",
     "description": "A deputy images for sliders, carousels",
     "license": "MIT",
@@ -15,8 +15,7 @@
     ],
 
     "extra": {
-        "icon": "icon.svg",
-        "scripts": "scripts.php"
+        "icon": "icon.svg"
     },
     "require": {
         "abeautifulsite/simpleimage": "2.5.*"

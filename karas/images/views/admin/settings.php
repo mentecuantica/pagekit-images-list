@@ -22,6 +22,8 @@
                 <li>
                     <div class="uk-margin-large-top uk-form-horizontal uk-panel uk-panel-box">
                         <div class="uk-form-row">
+                            <p class="uk-alert">Выберите папку в которую будете загружать картинки для галереи</p>
+                            <p class="uk-alert uk-alert-success">Затем в разделе Фотографии надо выбрать картинки которые вы хотите отображать в галерее</p>
                             <label class="uk-form-label">{{ 'Папка с картинками для галереи' | trans }}</label>
 
                             <div class="uk-form-controls">

@@ -1,7 +1,6 @@
 <?php
 use Pagekit\Application as App;
 use Karas\Images\ImageHelper;
-//use Karas\Images\Event\RouteListener;
 
 /*
  * This array is the module definition.
@@ -190,7 +189,12 @@ return [
     'events' => [
 
         'boot' => function ($event, \Pagekit\Application $app) {
-           // $app->subscribe(new RouteListener);
+
+            /**
+             * Extend the view, to get the helper function "image", which will provbide the url
+             *  to cached resized thumbnail
+             *
+             */
             $app->extend('view', function ($view) use ($app) {
                 return $view->addHelper(new ImageHelper($app));
             });

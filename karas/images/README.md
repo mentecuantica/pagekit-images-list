@@ -1,15 +1,38 @@
 # Images extension #
 
-Can upload images, resize it, create thumbnails on the fly (and cache it) and have a widget to output it
 
-It's not production ready, and even buggy. Still it can get you an idea or some base how to implement some things in Pagekit.
+You select the folder, all images from there are now accessible to be shown in gallery. 
+Thumbs sizes are configured, it generates thumbnails on the fly (and cache it) and have a widget to output it
+
+With the help of  
+
+    jQuery FlexSlider v2.6.1 Copyright 2012 WooThemes
+    Magnific Popup - v1.1.0 - 2016-02-20
+    * http://dimsemenov.com/plugins/magnific-popup/
+    * Copyright (c) 2016 Dmitry Semenov; */
+
+It's not production ready, and can be buggy. Still it can get you an idea or some base how to implement some things in Pagekit.
 
 I took hints and class from  [https://github.com/Bixie/pagekit-portfolio](https://github.com/Bixie/pagekit-portfolio "Bixie/pagekit-portfolio")
 
-So with all due respect and rights few things belongs to Bixie.
+So with all due respect and rights few things or ideas are belongs to Bixie.
 
-My knowledge of Vue.js is pretty basic. So thats kind of the root of issues.
+### My 10 rubles about Pagekit experience. ###
 
+Pagekit is a sweet piece of gift wrapping pretty ideas and UI, with pretty complicated components and 
+architecture. Keep in mind that i am not a good friend of Symfony components, and yet have some experience.
+I am more into Laravel, cause it's understandable. 
+
+Also using such kind of DI container in Pagekit appeared that autocomplete is basically ruined in IDE like PHPSTORM,
+and no helpers available at the moment.
+
+Other thing to mention - all your project kept in public web server folder. 
+
+My knowledge of Vue.js is pretty basic, but it's a nice framework, which worth at least try some basics of it.
+
+Well i will try to avoid Pagekit as the CMS of choice, it reminds me of October CMS - when you dig deeper. May be i am stupid )
+
+It's just my opinon 
 
 ## Extension dev process
 

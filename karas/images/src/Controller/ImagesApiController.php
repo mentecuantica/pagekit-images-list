@@ -27,7 +27,7 @@ class ImagesApiController {
 
 
     /**
-     * @Route("/cleanConfigGallery", methods="GET")
+     * @Route("/cleanConfigGallery", methods="POST")
      */
     public function cleanConfigGalleryAction()
     {

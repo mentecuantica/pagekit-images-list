@@ -1,4 +1,13 @@
 <?php
+/**
+ * Apperead that config option is enought to store selected images
+ * also it's almost autosaveable in admin via VUE.js
+ *
+ * So - no tables for this plugin, and no ORM usages
+ *
+ * Left for example
+ */
+
 
 return [
 
@@ -9,13 +18,13 @@ return [
 
         $util = $app['db']->getUtility();
 
-        if ($util->tableExists('@karas_images') === false) {
+      /*  if ($util->tableExists('@karas_images') === false) {
             $util->createTable('@karas_images', function ($table) {
                 $table->addColumn('id', 'integer', ['unsigned' => true, 'length' => 10, 'autoincrement' => true]);
                 $table->addColumn('name', 'string', ['length' => 255, 'default' => '']);
                 $table->setPrimaryKey(['id']);
             });
-        }
+        }*/
 
     },
 
@@ -37,10 +46,10 @@ return [
         $app['config']->remove('images');
 
         $util = $app['db']->getUtility();
-
+/*
         if ($util->tableExists('@karas_images')) {
             $util->dropTable('@karas_images');
-        }
+        }*/
 
     },
 

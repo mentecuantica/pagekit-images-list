@@ -395,35 +395,15 @@
 
 	module.exports = {
 
-	    link: {
-	        label: 'Images'
-	    },
-
-	    props: ['link'],
-
-	    data: function data() {
-	        return {
-	            name: []
-	        };
-	    },
-
-	    watch: {
-
-	        name: function name(_name) {
-	            this.link = '@hello/name?name=' + _name;
-	        }
-
-	    }
+	  props: ['image']
 
 	};
-
-	window.Extensions.components['settings-images'] = module.exports;
 
 /***/ },
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<!--<header-component/>-->\n<div class=\"karas-images\">\n    <p>this is karas image body</p>\n    <label for=\"form-name\" class=\"uk-form-label\">{{ 'Name' | trans }}</label>\n    <div class=\"uk-form-controls\">\n        <input id=\"form-name\" type=\"text\" class=\"uk-form-width-large\" v-model=\"name\"></input>\n    </div>\n\n</div>\n<!--<other-component/>-->\n";
+	module.exports = "\n<!--<header-component/>-->\n<div class=\"karas-image\">\n    <img :src=\"$url(image.src)\" :alt=\"image.filename\">\n\n</div>\n<!--<other-component/>-->\n";
 
 /***/ }
 /******/ ]);

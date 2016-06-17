@@ -93,6 +93,7 @@
 	        select: function select() {
 	            this.folder = this.$refs.finder.getSelected()[0];
 	            this.$dispatch('folder-selected', this.folder);
+	            $data.config.folder = this.folder;
 	            this.$refs.finder.removeSelection();
 	            this.$refs.modal.close();
 	        },

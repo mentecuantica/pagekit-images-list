@@ -9,19 +9,19 @@
  * @var $intl \Pagekit\Intl\IntlModule
  * @var $theme \Pagekit\Module\Module
  */ ?><?php $view->style('comment-index', 'images:assets/css/images.admin.css') ?>
-<?php // $view->script('image-settings', 'images:app/bundle/settings.js', 'vue') ?>
 <h1>Выбор картинок</h1>
 <div id="imaginarium">
     <div data-uk-margin="" class="uk-margin uk-flex uk-flex-space-between uk-flex-wrap">
         <div data-uk-margin="">
 
-            <p class="uk-margin-remove">Кликните по картинкам, которые хотите видеть в галерее, после этого нажмите сохранить</p>
+            <p class="uk-margin-remove">Тут отображаются все картинки из папки, которую вы выбираете в настройках.
+                Кликните по картинкам, которые хотите видеть в галерее, после этого нажмите сохранить</p>
 
         </div>
         <div data-uk-margin="">
 
             <button class="uk-button uk-button-primary" @click.prevent="save">Сохранить</button>
-            <button class="uk-button uk-button-primary" @click.prevent="clearConfigGallery">Очистить кэш фото</button>
+            <!--<button class="uk-button uk-button-primary" @click.prevent="clearConfigGallery">все </button>-->
 
         </div>
     </div>
@@ -106,7 +106,7 @@
                 //this.config.gallery = [];
                 this.$http.post('/api/images/cleanConfigGallery', {
                     }).then(function (response) {
-                        this.$notify('Кэш фото очищен.');
+                        this.$notify('Список отмеченных фото очищен.');
 
                    // this.config.gallery = response.data.currentConfig.gallery;
 
@@ -135,7 +135,7 @@
                     name: 'images',
                     config: this.config
                 }).then(function () {
-                        this.$notify('Фотографии сохранены.');
+                        this.$notify('Изменения сохранены.');
                     }, function (data) {
                         this.$notify(data, 'danger');
                     }

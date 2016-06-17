@@ -17,6 +17,11 @@ I took hints and class from  [https://github.com/Bixie/pagekit-portfolio](https:
 
 So with all due respect and rights few things or ideas are belongs to Bixie.
 
+## How to install works ##
+
+You can download the extension  zip file 
+
+
 ### My 10 rubles about Pagekit experience. ###
 
 Pagekit is a sweet piece of gift wrapping pretty ideas and UI, with pretty complicated components and 

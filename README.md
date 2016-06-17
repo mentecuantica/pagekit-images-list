@@ -19,7 +19,7 @@ So with all due respect and rights few things or ideas are belongs to Bixie.
 
 ## How to use it ##
 
-You can download the whole repo as a zip file, and install it via Pagekit Admin Extensions.
+You can download the whole repo as a [https://github.com/yurakaras/pagekit-images-list/archive/master.zip](https://github.com/yurakaras/pagekit-images-list/archive/master.zip) zip file, and install it via Pagekit Admin Extensions.
 Or just for experiments place it under packages karas/images folder.
  
 ## How it works ##
